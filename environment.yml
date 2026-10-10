@@ -1,0 +1,21 @@
+name: gwps-replication
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn>=1.3   # sklearn.cluster.HDBSCAN
+  - matplotlib
+  - seaborn
+  - anndata
+  - pytorch            # CPU build is enough; required by pymde
+  - pymde
+  - gseapy
+  - adjusttext
+  - fastcluster        # faster hierarchical clustering for seaborn clustermap
+  - jupyterlab
+  - nbconvert
+  - ipykernel
